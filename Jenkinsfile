@@ -17,7 +17,6 @@ pipeline {
     stage('deploy and service') {
       steps {
         sh '''
-        pwd
         ansible-playbook /var/lib/jenkins/master_ansible.yml
         '''
       }
