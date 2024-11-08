@@ -9,9 +9,8 @@ pipeline {
     stage('docker build and push') {
       steps {
         sh '''
-        docker build -t 211.183.3.150/test2/jenkinsweb:1.0 .
-        docker push 211.183.3.150/test2/jenkinsweb:1.0
-        pwd
+        docker build -t 211.183.3.150/test2/jenkinsweb:3.0 .
+        docker push 211.183.3.150/test2/jenkinsweb:3.0
         '''
       }
     }
